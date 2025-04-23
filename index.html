@@ -1,117 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ilham Syaiful Latif | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    * {
+    body {
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      background-color: #f9f9f9;
+      background-color: #f4f4f4;
       color: #333;
-      line-height: 1.6;
-      transition: background 0.3s ease;
     }
     header {
-      background: #fff;
-      padding: 2rem;
+      background-color: #333;
+      color: white;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      animation: fadeInDown 1s ease-out;
+      padding: 2rem 0;
     }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #222;
-    }
-    header p {
-      font-size: 1rem;
-      color: #777;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      animation: fadeIn 1.2s ease-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    section {
-      margin-bottom: 3rem;
+    h1 {
+      margin: 0;
     }
     h2 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      color: #444;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      text-align: center;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease;
-      animation: fadeInUp 1s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .card h3 {
-      margin: 0.5rem 0 0.25rem;
-      font-size: 1.2rem;
-    }
-    .card p {
-      font-size: 0.9rem;
-      color: #666;
-    }
-    iframe {
-      width: 100%;
-      height: 315px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 1rem;
+    section {
+      padding: 2rem;
     }
     footer {
+      background-color: #333;
+      color: white;
       text-align: center;
-      padding: 2rem;
-      background: #fff;
-      color: #999;
-      font-size: 0.9rem;
-      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.03);
+      padding: 1rem;
+      margin-top: 2rem;
     }
     a {
       color: #0077cc;
       text-decoration: none;
     }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+    .form-container {
+      background-color: white;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .form-container input, .form-container textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form-container button {
+      background-color: #0077cc;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-container button:hover {
+      background-color: #005fa3;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Ilham Syaiful Latif</h1>
     <p>Content Creator | Videographer | Photographer</p>
@@ -120,45 +83,39 @@
   <div class="container">
     <section>
       <h2>About Me</h2>
-      <p>Saya adalah seorang content creator berpengalaman yang memiliki passion dalam dunia videografi, fotografi, dan editing video. Berbasis di Bantul, Yogyakarta. Pernah PKL di TV Muhammadiyah selama 6 bulan dan sekarang aktif sebagai freelancer dan kreator konten.</p>
+      <p>Saya seorang content creator dengan keahlian di videografi, fotografi, dan editing. Saya berpengalaman di TV Muhammadiyah dan kini aktif sebagai freelancer.</p>
     </section>
 
     <section>
-      <h2>My Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Project 1" />
-          <h3>Video Dokumenter</h3>
-          <p>Project video dokumenter kegiatan sosial di Yogyakarta.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Project 2" />
-          <h3>Fotografi Produk</h3>
-          <p>Fotografi untuk UMKM lokal, dengan gaya estetik dan clean.</p>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Project 3" />
-          <h3>Konten Instagram Reels</h3>
-          <p>Editing Reels untuk brand lokal dengan tone modern & minimalis.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Video Showcase</h2>
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <h2>Projects</h2>
+      <p>Di bawah ini adalah beberapa proyek yang pernah saya kerjakan:</p>
+      <ul>
+        <li>Video Dokumenter Sosial</li>
+        <li>Fotografi Produk untuk UMKM</li>
+        <li>Konten Reels Instagram untuk Brand</li>
+      </ul>
     </section>
 
     <section>
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:ilham.latif@email.com">ilham.latif@email.com</a><br>
-         Instagram: <a href="https://instagram.com/ilham.latif" target="_blank">@ilham.latif</a>
-      </p>
+      <p>Anda dapat menghubungi saya melalui email atau melalui form kontak di bawah:</p>
+      <p>Email: <a href="mailto:ilham.latif@email.com">ilham.latif@email.com</a></p>
+      
+      <div class="form-container">
+        <h3>Contact Form</h3>
+        <form action="mailto:ilham.latif@email.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
   </div>
 
   <footer>
     <p>&copy; 2025 Ilham Syaiful Latif. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
